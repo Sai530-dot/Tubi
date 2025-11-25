@@ -22,7 +22,7 @@ const SLMGenerator = () => {
     const connect = async () => {
       try {
         // Connects to your local Python server
-        const client = await Client.connect("http://localhost:7860");
+        const client = await Client.connect("https://spenrtgs-moviescripter01.hf.space");
         setGradioClient(client);
         setConnectionStatus('Connected to Model');
         console.log("Connected to Gradio backend successfully!");
