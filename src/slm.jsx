@@ -46,7 +46,7 @@ const handleGenerate = useCallback(async () => {
 
     try {
       // ⚠️ CHANGE HERE: Use 0 instead of "/predict"
-      const result = await gradioClient.predict("/predict", [
+      const result = await gradioClient.predict(0, [
         prompt,       
         maxTokens,    
         temperature,  
