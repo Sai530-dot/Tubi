@@ -3,6 +3,8 @@ Movie Script Generator
 
     A custom Small Language Model (SLM) trained on 5,000 movie scripts and 10+ million lines of dialogue to generate cinematic scenes.
 
+<img width="1029" height="963" alt="image" src="https://github.com/user-attachments/assets/0971f56f-fd31-4084-9448-41202297aae4" />
+
 
 
 About The Project
