@@ -11,7 +11,7 @@ const SLMGenerator = () => {
   // Model parameters
   const [maxTokens, setMaxTokens] = useState(200);
   const [temperature, setTemperature] = useState(0.8);
-  const [topK, setTopK] = useState(null);
+  const [topK, setTopK] = useState(20);
 
   // State for the Gradio client
   const [gradioClient, setGradioClient] = useState(null);
@@ -45,7 +45,6 @@ const handleGenerate = useCallback(async () => {
     setScript('Generating script...');
 
     try {
-      // ⚠️ CHANGE HERE: Use 0 instead of "/predict"
       const result = await gradioClient.predict("/predict", [
         prompt,       
         maxTokens,    
